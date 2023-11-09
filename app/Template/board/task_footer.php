@@ -123,15 +123,15 @@
         <?php endif ?>
 
         <?php if ($task['is_active'] == 1): ?>
-            <div class="task-icon-age">
+            <!-- <div class="task-icon-age">
                 <span title="<?= t('Task age in days')?>" class="task-icon-age-total"><span class="ui-helper-hidden-accessible"><?= t('Task age in days') ?> </span><?= $this->dt->age($task['date_creation']) ?></span>
                 <span title="<?= t('Days in this column')?>" class="task-icon-age-column"><span class="ui-helper-hidden-accessible"><?= t('Days in this column') ?> </span><?= $this->dt->age($task['date_moved']) ?></span>
-            </div>
+            </div> -->
         <?php else: ?>
             <span class="task-board-closed"><i class="fa fa-ban fa-fw"></i><?= t('Closed') ?></span>
         <?php endif ?>
 
-        <?= $this->task->renderPriority($task['priority']) ?>
+        <!-- <?= $this->task->renderPriority($task['priority']) ?> -->
 
         <?= $this->hook->render('template:board:task:icons', array('task' => $task)) ?>
     </div>
