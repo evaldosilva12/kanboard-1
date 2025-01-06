@@ -28,3 +28,5 @@ node_modules
 .phpunit.result.cache
 app/version.txt
 kanboard.zip
+/docker/
+docker-compose.yml
