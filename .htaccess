@@ -32,3 +32,8 @@
 <IfModule pagespeed_module>
     ModPagespeed Off
 </IfModule>
+
+# Prevent indexing of the folder and its content by search engines
+<IfModule mod_headers.c>
+    Header set X-Robots-Tag "noindex, nofollow"
+</IfModule>
